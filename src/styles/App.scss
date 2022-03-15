@@ -1,6 +1,9 @@
+$light-bkg: #e0e0e0;
+$light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
 .App {
-  height: 100vh;
-  background-color: #0d0d2a;
+  height: 100% !important;
+  background: $light-bkg;
 }
 
 .Font-Bold {
@@ -10,7 +13,7 @@
 
 .Font-Thin {
   font-family: "Heebo", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .App-header {
@@ -27,7 +30,9 @@
 
 .Gradient-bkg {
   color: white;
-  background-color: white;
+  border-radius: 50px;
+  background: $light-bkg;
+  box-shadow: $light-box;
   // background: linear-gradient(
   //   112deg,
   //   #0d0d2a 0%,
@@ -38,7 +43,6 @@
   //   #35355b 75%,
   //   #0d0d2a 100%
   // );
-  background-size: 200% 200%;
   // -webkit-animation: Gradient 25s ease infinite;
   // -moz-animation: Gradient 25s ease infinite;
   // animation: Gradient 25s ease infinite;
@@ -63,14 +67,29 @@
   mix-blend-mode: difference;
   top: 10vh;
   left: 10vh;
+  color:lightcoral
+}
+.App-header-subtext {
+  margin: 0px;
+  padding-top: 5.25vh;
+  text-align: right;
+  color: black;
+  font-size: 3vh;
+  font-weight: 400;
+}
+.Section-header-text {
+  margin-left: 4vh;
+  color: #106060;
+  font-size: 3vh;
+  font-weight: 800;
 }
 
-.App-body{
+.App-body {
   height: 90vh;
   overflow-y: scroll;
   padding: 0 10vh;
 }
-.App-body-scrollable{
+.App-body-scrollable {
   color: white;
   height: 200vh;
 }
@@ -84,11 +103,36 @@
 }
 
 .Info-card {
-  margin: 0.5vh;
-  background: white;
-  height: '300px';
+  font-size: 2vh;
+  font-weight: 400;
+  text-align: justify;
+  padding: 2vh;
+  margin: 2vh;
+  color: black;
+  //background: rgba(255, 255, 255, 0.192);
   border-radius: 1vh;
-  min-height: 30vh;
+  min-height: 10vh;
+  //border: .25vh solid rgba(255, 255, 255, 0.698);
+  //box-shadow: inset 00px 00px 1vh white;
+  background: $light-bkg;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.Flex-column {
+  flex: 33%;
+  max-width: 33%;
+}
+.Flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1vh;
+}
+
+@media (max-width: 1000px) {
+  .Flex-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @-webkit-keyframes Gradient {
