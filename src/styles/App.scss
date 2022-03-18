@@ -1,5 +1,10 @@
 $light-bkg: #e0e0e0;
 $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+$light-box-mobile: 5px 2px 20px #bebebe, -20px -20px 60px #ffffff;
+
+body {
+  overflow: hidden
+}
 
 .App {
   height: 100% !important;
@@ -25,11 +30,11 @@ $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   position: relative;
   overflow: visible;
   z-index: 1;
-  height: 10vh;
+  height: 75px;
 }
 
 .Gradient-bkg {
-  color: white;
+  color: $light-bkg;
   border-radius: 50px;
   background: $light-bkg;
   box-shadow: $light-box;
@@ -65,9 +70,10 @@ $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   position: relative;
   font-size: 13vh;
   mix-blend-mode: difference;
+  opacity: 90%;
   top: 10vh;
   left: 10vh;
-  color:lightcoral
+  color:#f08080
 }
 .App-header-subtext {
   margin: 0px;
@@ -78,20 +84,25 @@ $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   font-weight: 400;
 }
 .Section-header-text {
-  margin-left: 4vh;
   color: #106060;
   font-size: 3vh;
   font-weight: 800;
+  margin: 0px;
+}
+.Section-header {
+  margin-left: 2vh;
+  display: flex;
+  align-items: center;
 }
 
 .App-body {
-  height: 90vh;
+  height: calc(100vh - 75px);
   overflow-y: scroll;
   padding: 0 10vh;
 }
 .App-body-scrollable {
-  color: white;
-  height: 200vh;
+  color: $light-bkg;
+  height: 100vh;
 }
 
 .App-link {
@@ -100,6 +111,11 @@ $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 
 .Body-spacer {
   height: 12vh;
+}
+
+.Spline-styling canvas {
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .Info-card {
@@ -132,6 +148,37 @@ $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   .Flex-column {
     flex: 100%;
     max-width: 100%;
+  }
+  
+  .App-header-text {
+    font-size: 10vw;
+    top: 4vh;
+    left: 4vh;
+  }
+
+  .App-header {
+    height: 30px
+  }
+  
+  .App-body {
+    height: calc(100vh - 30px);
+    padding: 0 1vh;
+  }
+
+  .App-header-subtext {
+    display: none;
+  }
+
+  .Body-spacer {
+    height: 5vh;
+  }
+
+  .Flex-row {
+    padding-bottom: 100px;
+  }
+
+  .Gradient-bkg {
+    box-shadow: $light-box-mobile;
   }
 }
 
