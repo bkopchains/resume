@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.scss';
-import Tilt from 'react-parallax-tilt';
+import { Spline } from '@splinetool/react-spline';
 
 function App() {
 
@@ -20,7 +20,8 @@ function App() {
           </div>
           <div className='Flex-row'>
             <div className='Flex-column'>
-              <div>
+              <div className='Section-header'>
+                <Spline className='Spline-styling' scene="https://prod.spline.design/Qeh6p3dA8CfnKiC1/scene.spline" />
                 <p className='Section-header-text Font-Bold'>Employment</p>
               </div>
               <div className='Info-card' >
@@ -48,13 +49,45 @@ function App() {
               </div>
             </div>
             <div className='Flex-column'>
-              <div className='Info-card'></div>
-              <div className='Info-card'></div>
-              <div className='Info-card'></div>
+              <div className='Section-header'>
+                <Spline className='Spline-styling' scene="https://prod.spline.design/ttVyXTELSLIeFU-l/scene.spline" />
+                <p className='Section-header-text Font-Bold'>Education</p>
+              </div>
+              <div className='Info-card'>UNION COLLEGE – Schenectady, NY	2014-2018</div>
+              <div className='Info-card'>Bachelor of Science in Computer Science – Minor in Digital Media</div>
+              <div className='Info-card'>Senior Thesis:  Augmented reality app using Unity3D and Apple ARKit</div>
             </div>
             <div className='Flex-column'>
-              <div className='Info-card'></div>
-              <div className='Info-card'></div>
+              <div className='Section-header'>
+                <Spline className='Spline-styling' scene="https://prod.spline.design/indqQOtEo5ZAtP2T/scene.spline" />
+                <p className='Section-header-text Font-Bold'>Skills</p>
+              </div>
+              <div className='Info-card'>
+                Programming Languages/Frameworks:
+                C#, Entity Framework, HTML, CSS, Javascript, Typescript, React, Jest, Cypress, SQL
+                Proficient in using the following software:
+                Visual Studio, VS Code, Git, Adobe Suite, Blender, Cinema4D, Unity, Microsoft Office
+                Experience in maintaining Microsoft Azure Cloud and Azure DevOps solutions
+
+              </div>
+              <div className='Section-header'>
+                <Spline className='Spline-styling' scene="https://prod.spline.design/hrRByXKmZlrg1f8v/scene.spline" />
+                <p className='Section-header-text Font-Bold'>Certifications</p>
+              </div>
+              <div className='Info-card'>
+                Top Secret Clearance, Active			2019-Present
+
+                Microsoft Certified: Azure Developer Associate (AZ-204)	2021
+                Completed training for, and passed the Microsoft AZ-204 exam, certifying experience in managing and developing solutions built on the Azure Cloud platform.
+              </div>
+              <div className='Section-header'>
+                <Spline className='Spline-styling' scene="https://prod.spline.design/XCZyEcJz1nwmIi2L/scene.spline" />
+                <p className='Section-header-text Font-Bold'>Contact</p>
+              </div>
+              <div className='Info-card'>
+                Email: <a href='mailto:benkopchains@gmail.com'>benkopchains@gmail.com</a>
+                Phone: 347-266-6292
+              </div>
             </div>
           </div>
         </div>
