@@ -2,6 +2,10 @@ $light-bkg: #e0e0e0;
 $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 $light-box-mobile: 5px 2px 20px #bebebe, -20px -20px 60px #ffffff;
 
+$pink-text: #f08080;
+$green-text: #106060;
+$grey-text: #808080;
+
 body {
   overflow: hidden
 }
@@ -35,7 +39,6 @@ body {
 
 .Gradient-bkg {
   color: $light-bkg;
-  border-radius: 50px;
   background: $light-bkg;
   box-shadow: $light-box;
   // background: linear-gradient(
@@ -73,19 +76,28 @@ body {
   opacity: 90%;
   top: 10vh;
   left: 10vh;
-  color:#f08080
+  color: $pink-text;
+  transition: 0.5s;
 }
+
+.App-header-text:hover {
+  color: $green-text;
+  cursor: pointer;
+}
+
 .App-header-subtext {
   margin: 0px;
-  padding-top: 5.25vh;
+  position: relative;
+  top: 7vh;
+  right: 3vh;
   text-align: right;
   color: black;
-  font-size: 3vh;
+  font-size: xx-large;
   font-weight: 400;
 }
 .Section-header-text {
-  color: #106060;
-  font-size: 3vh;
+  color: $green-text;
+  font-size: xx-large;
   font-weight: 800;
   margin: 0px;
 }
@@ -110,7 +122,7 @@ body {
 }
 
 .Body-spacer {
-  height: 12vh;
+  height: 15vh;
 }
 
 .Spline-styling canvas {
@@ -119,7 +131,7 @@ body {
 }
 
 .Info-card {
-  font-size: 2vh;
+  font-size: 20px;
   font-weight: 400;
   text-align: justify;
   padding: 2vh;
@@ -127,11 +139,35 @@ body {
   color: black;
   //background: rgba(255, 255, 255, 0.192);
   border-radius: 1vh;
-  min-height: 10vh;
+  min-height: 1vh;
   //border: .25vh solid rgba(255, 255, 255, 0.698);
   //box-shadow: inset 00px 00px 1vh white;
   background: $light-bkg;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.Info-card-header {
+  width: 100%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: x-large
+}
+
+.Info-border {
+  border-bottom: 1px solid lightgray;
+}
+
+.Info-card-header-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: $green-text;
+}
+.Info-card-header-subtitle {
+  width: 100%;
+  color: $grey-text;
+  font-size: small;
 }
 
 .Flex-column {
@@ -142,6 +178,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0 1vh;
+}
+
+@media (max-width: 1500px) {
+  .Flex-column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -170,7 +213,7 @@ body {
   }
 
   .Body-spacer {
-    height: 5vh;
+    height: 7vh;
   }
 
   .Flex-row {
@@ -179,6 +222,11 @@ body {
 
   .Gradient-bkg {
     box-shadow: $light-box-mobile;
+  }
+  
+  .Spline-styling canvas {
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 
