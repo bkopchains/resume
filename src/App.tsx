@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles/App.scss';
 import { Spline } from '@splinetool/react-spline';
+import { Card } from './components/Card';
+import CardBody from './components/Card/CardBody';
+import CardHeader from './components/Card/CardHeader';
 
 function App() {
-
-
 
   return (
     <div className="App">
@@ -24,17 +25,25 @@ function App() {
                 <Spline className='Spline-styling' scene="https://prod.spline.design/Qeh6p3dA8CfnKiC1/scene.spline" />
                 <p className='Section-header-text Font-Bold'>Employment</p>
               </div>
-              <div className='Info-card' >
-                <div style={{ width: '100%' }}>
-                  Tech Lead: 			May 2021-Present
+              <Card>
+                <CardHeader
+                  titleText='Tech Lead:'
+                  rightDetailText='May 2021-Present'
+                  subTitleText='DYNAMIS INC.'
+                />
+                <CardBody>
                   Lead communication with clients to answer questions about the technology in our web application and respond quickly to time-sensitive bugs or change requests.
                   Responsible for initial development environment setup and training of new hires.
                   Worked in tandem with other developers to assist on more difficult tasks.
-                </div>
-              </div>
-              <div className='Info-card'>
-                <div style={{ width: '100%' }}>
-                  Software Developer: 		Jan 2020-Present
+                </CardBody>
+              </Card>
+              <Card>
+                <CardHeader
+                  titleText='Software Developer:'
+                  rightDetailText='Jan 2020-Present'
+                  subTitleText='DYNAMIS INC.'
+                />
+                <CardBody>
                   Provided full-stack support and worked with global clientele on two prominent web applications:
                   Cobra (CSHTML/.NET Framework/SQL):
                   Global emergency management software used to track ongoing incidents and conduct preparedness training exercises
@@ -45,49 +54,105 @@ function App() {
                   Lead developer for House Appropriations Ledger web application used by the US House Appropriations Committee as a tool for tracking changes to various government budgets
                   Performed deployments to the House offline virtual machines via Azure DevOps and Octopus
 
-                </div>
-              </div>
+                </CardBody>
+              </Card>
             </div>
             <div className='Flex-column'>
               <div className='Section-header'>
                 <Spline className='Spline-styling' scene="https://prod.spline.design/ttVyXTELSLIeFU-l/scene.spline" />
                 <p className='Section-header-text Font-Bold'>Education</p>
               </div>
-              <div className='Info-card'>UNION COLLEGE – Schenectady, NY	2014-2018</div>
-              <div className='Info-card'>Bachelor of Science in Computer Science – Minor in Digital Media</div>
-              <div className='Info-card'>Senior Thesis:  Augmented reality app using Unity3D and Apple ARKit</div>
-            </div>
-            <div className='Flex-column'>
+              <Card>
+                <CardHeader
+                  titleText='Union College:'
+                  rightDetailText='2014-2018'
+                  subTitleText='SCHENECTADY, NY'
+                />
+                <CardBody>
+                  Bachelor of Science in Computer Science – Minor in Digital Media
+                </CardBody>
+                <CardBody>
+                  Senior Thesis:  Augmented reality app using Unity3D and Apple ARKit
+                </CardBody>
+              </Card>
               <div className='Section-header'>
                 <Spline className='Spline-styling' scene="https://prod.spline.design/indqQOtEo5ZAtP2T/scene.spline" />
                 <p className='Section-header-text Font-Bold'>Skills</p>
               </div>
-              <div className='Info-card'>
-                Programming Languages/Frameworks:
-                C#, Entity Framework, HTML, CSS, Javascript, Typescript, React, Jest, Cypress, SQL
-                Proficient in using the following software:
-                Visual Studio, VS Code, Git, Adobe Suite, Blender, Cinema4D, Unity, Microsoft Office
-                Experience in maintaining Microsoft Azure Cloud and Azure DevOps solutions
-
-              </div>
+              <Card>
+                <CardHeader
+                  titleText='Programming Languages/Frameworks:'
+                  rightDetailText=''
+                  subTitleText='C#/.NET, Entity Framework, HTML, CSS, Javascript, Typescript, React, Jest, Cypress, SQL'
+                />
+                <CardBody>
+                  Full-stack developer, familiar with a full suite of tools ranging from designing UI to building databases. 
+                </CardBody>
+              </Card>
+              <Card>
+                <CardHeader
+                  titleText='Software Proficiencies:'
+                  rightDetailText=''
+                  subTitleText='Visual Studio, VS Code, Adobe Suite, Blender, Cinema4D, Unity, Microsoft Office'
+                  noBorder
+                />
+                <CardBody>
+                  Skilled at using multiple different applications necessart for everyday development, as well as a handful of content creation/digital art programs. 
+                </CardBody>
+              </Card>
+              <Card>
+                <CardHeader
+                  titleText='Technologies/Development Tools:'
+                  rightDetailText=''
+                  subTitleText='Git, Azure Cloud & DevOps Solutions'
+                  noBorder
+                />
+                <CardBody>
+                  Experience developing for and maintaining cloud-based solutions using both virtual machines and app services, and managing the CI/CD pipeline through Azure DevOps. 
+                </CardBody>
+                {/* <CardBody>
+                  Full-stack developer with a passion for digital art and front-end design. Experience in maintaining Microsoft Azure Cloud and Azure DevOps solutions
+                </CardBody> */}
+              </Card>
+            </div>
+            <div className='Flex-column'>
               <div className='Section-header'>
                 <Spline className='Spline-styling' scene="https://prod.spline.design/hrRByXKmZlrg1f8v/scene.spline" />
                 <p className='Section-header-text Font-Bold'>Certifications</p>
               </div>
-              <div className='Info-card'>
-                Top Secret Clearance, Active			2019-Present
-
-                Microsoft Certified: Azure Developer Associate (AZ-204)	2021
-                Completed training for, and passed the Microsoft AZ-204 exam, certifying experience in managing and developing solutions built on the Azure Cloud platform.
-              </div>
+              <Card>
+                <CardHeader
+                  titleText='Top Secret Clearance'
+                  rightDetailText='2019-Present'
+                  subTitleText='Active'
+                  noBorder
+                />
+              </Card>
+              <Card>
+                <CardHeader
+                  titleText='Microsoft Certified: Azure Developer Associate'
+                  rightDetailText='2021'
+                  subTitleText='AZ-204'
+                />
+                <CardBody>
+                  Completed training for, and passed the Microsoft AZ-204 exam, certifying experience in managing and developing solutions built on the Azure Cloud platform.
+                </CardBody>
+              </Card>
               <div className='Section-header'>
                 <Spline className='Spline-styling' scene="https://prod.spline.design/XCZyEcJz1nwmIi2L/scene.spline" />
                 <p className='Section-header-text Font-Bold'>Contact</p>
               </div>
-              <div className='Info-card'>
-                Email: <a href='mailto:benkopchains@gmail.com'>benkopchains@gmail.com</a>
-                Phone: 347-266-6292
-              </div>
+              <Card>
+                <CardHeader 
+                  titleText='Email:'
+                  rightDetailText={<a href='mailto:benkopchains@gmail.com'>benkopchains@gmail.com</a>}
+                />
+                <CardHeader 
+                  titleText='Phone:'
+                  rightDetailText='347-266-6292'
+                  noBorder
+                />
+              </Card>
             </div>
           </div>
         </div>
