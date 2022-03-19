@@ -14,7 +14,7 @@ function App() {
           <p className='App-header-text Font-Bold'>Ben Kopchains</p>
         </div>
       </header>
-      <body className='App-body Font-Thin'>
+      <div className='App-body Font-Thin'>
         <div className='App-body-scrollable'>
           <div className='Body-spacer'>
             <p className='App-header-subtext Font-Thin'>Software Developer</p>
@@ -156,7 +156,7 @@ function App() {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }
