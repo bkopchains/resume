@@ -96,10 +96,12 @@ function App() {
                   subTitleText='SCHENECTADY, NY'
                 />
                 <CardBody>
-                  Bachelor of Science in Computer Science – Minor in Digital Media
-                </CardBody>
-                <CardBody>
-                  Senior Thesis:  Augmented reality app using Unity3D and Apple ARKit
+                  <p>
+                    Bachelor of Science in Computer Science – Minor in Digital Media
+                  </p>
+                  <p>
+                    Senior Thesis:  Augmented reality app using Unity3D and Apple ARKit
+                  </p>
                 </CardBody>
               </Card>
               <div className='Section-header'>
