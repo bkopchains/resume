@@ -6,8 +6,19 @@ $pink-text: #f08080;
 $green-text: #106060;
 $grey-text: #808080;
 
+$transition-time: 0.2s;
+
 body {
   overflow: hidden
+}
+
+a {
+  color: $green-text;
+  transition: $transition-time;
+}
+
+a:hover {
+  color: $pink-text
 }
 
 .App {
@@ -125,6 +136,16 @@ body {
   height: 15vh;
 }
 
+.Custom-list{
+  list-style-type: circle;
+  padding-inline-start: 25px;
+}
+
+.Custom-list li{
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
 .Spline-styling canvas {
   width: 50px !important;
   height: 50px !important;
@@ -151,6 +172,37 @@ body {
   margin-bottom: 5px;
   padding-bottom: 5px;
   font-size: x-large
+}
+
+.Clickable {
+  cursor: pointer;
+}
+
+.Clickable:hover div, .Clickable:hover div .Info-icon  {
+    color: $pink-text;
+    transition: $transition-time;
+}
+
+.Info-icon {
+  transform: rotate(0deg);
+}
+
+.Info-icon.open {
+  transform: rotate(180deg);
+}
+
+.Info-card-body{
+  max-height: 700px;
+  transition: max-height 0.5s ease-out;
+}
+
+.Info-card-body.collapsed {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.Info-icon {
+  color: $grey-text;
 }
 
 .Info-border {
@@ -222,6 +274,15 @@ body {
 
   .Gradient-bkg {
     box-shadow: $light-box-mobile;
+  }
+
+  .Info-card-header-title {
+    flex-direction: column;
+  }
+  .Info-card-header-title div:last-child {
+    width: 100%;
+    color: $grey-text;
+    font-size: small;
   }
   
   .Spline-styling canvas {
