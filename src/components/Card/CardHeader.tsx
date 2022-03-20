@@ -1,3 +1,5 @@
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { FC, ReactElement, useContext } from "react";
 import cardContext from "./cardContext";
 
@@ -36,7 +38,10 @@ const CardHeader: FC<ICardHeader> = (props) => {
                 <div>{titleText}</div>
                 <div>{rightDetailText}</div>
             </div>
-            <div className="Info-card-header-subtitle">{subTitle}</div>
+            <div style={{display: 'flex'}}>
+                <div className="Info-card-header-subtitle">{subTitle}</div>
+                {accordion && <FontAwesomeIcon icon={faAngleUp} className={`Info-icon ${bodyOpen ? "open" : ""}`}/>}
+            </div>
         </div>
     )
 }

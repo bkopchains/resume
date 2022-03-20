@@ -6,13 +6,15 @@ $pink-text: #f08080;
 $green-text: #106060;
 $grey-text: #808080;
 
+$transition-time: 0.2s;
+
 body {
   overflow: hidden
 }
 
 a {
   color: $green-text;
-  transition: 0.2s;
+  transition: $transition-time;
 }
 
 a:hover {
@@ -176,9 +178,31 @@ a:hover {
   cursor: pointer;
 }
 
-.Clickable:hover div {
-  color: $pink-text;
-  transition: 0.2s;
+.Clickable:hover div, .Clickable:hover div .Info-icon  {
+    color: $pink-text;
+    transition: $transition-time;
+}
+
+.Info-icon {
+  transform: rotate(0deg);
+}
+
+.Info-icon.open {
+  transform: rotate(180deg);
+}
+
+.Info-card-body{
+  max-height: 700px;
+  transition: max-height 0.5s ease-out;
+}
+
+.Info-card-body.collapsed {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.Info-icon {
+  color: $grey-text;
 }
 
 .Info-border {

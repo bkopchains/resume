@@ -4,7 +4,7 @@ import cardContext from "./cardContext";
 
 const Card: FC = (props) => {
     const { children } = props;
-    const [bodyOpen, setBodyOpen] = useState<boolean>(false);
+    const [bodyOpen, setBodyOpen] = useState<boolean>(true);
     const toggleBodyOpen = () => {
         setBodyOpen(!bodyOpen);
     }

@@ -30,6 +30,7 @@ function App() {
                   titleText='Tech Lead'
                   rightDetailText='May 2021-Present'
                   subTitleText='DYNAMIS INC.'
+                  accordion
                 />
                 <CardBody>
                   <p>
@@ -73,9 +74,10 @@ function App() {
               </Card>
               <Card>
                 <CardHeader
-                  titleText='Junior Software Developer'
+                  titleText='Junior Developer'
                   rightDetailText={'Oct 2018-Jan 2020'}
                   subTitleText='DYNAMIS INC.'
+                  accordion
                 />
                 <CardBody>
                   Supported the team in continuous development and maintenance of the Cobra web application for clients such as the Belgian government and the US Air National Guard.
@@ -108,21 +110,49 @@ function App() {
                 <CardHeader
                   titleText='Languages/Frameworks'
                   rightDetailText=''
-                  subTitleText='C#/.NET, Entity Framework, HTML, CSS, Javascript, Typescript, React, Jest, Cypress, SQL'
+                  subTitleText='Full-stack developer, familiar with a full suite of tools'
+                  accordion
                 />
                 <CardBody>
-                  Full-stack developer, familiar with a full suite of tools ranging from designing UI to building databases.
+                  <div style={{ display: 'flex' }}>
+                    <ul className='Custom-list'>
+                      <li>C#/.NET</li>
+                      <li>Entity Framework</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Javascript</li>
+                    </ul>
+                    <ul className='Custom-list' style={{ marginLeft: '20px' }}>
+                      <li>Typescript</li>
+                      <li>React</li>
+                      <li>Jest</li>
+                      <li>Cypress</li>
+                      <li>SQL</li>
+                    </ul>
+                  </div>
                 </CardBody>
               </Card>
               <Card>
                 <CardHeader
                   titleText='Software Proficiencies'
                   rightDetailText=''
-                  subTitleText='Visual Studio, VS Code, Adobe Suite, Blender, Cinema4D, Unity, Microsoft Office'
-                  noBorder
+                  subTitleText='Skilled at using a wide array of software'
+                  accordion
                 />
                 <CardBody>
-                  Skilled at using multiple different applications necessart for everyday development, as well as a handful of content creation/digital art programs.
+                  <div style={{ display: 'flex' }}>
+                    <ul className='Custom-list'>
+                      <li>Visual Studio</li>
+                      <li>VS Code</li>
+                      <li>Adobe Suite</li>
+                      <li>Blender</li>
+                    </ul>
+                    <ul className='Custom-list' style={{ marginLeft: '20px' }}>
+                      <li>Cinema4D</li>
+                      <li>Unity</li>
+                      <li>Microsoft Office</li>
+                    </ul>
+                  </div>
                 </CardBody>
               </Card>
               <Card>
@@ -130,7 +160,6 @@ function App() {
                   titleText='Technologies'
                   rightDetailText=''
                   subTitleText='Git, Azure Cloud & DevOps Solutions'
-                  noBorder
                 />
                 <CardBody>
                   Experience developing for and maintaining cloud-based solutions using both virtual machines and app services, and managing the CI/CD pipeline through Azure DevOps.
