@@ -10,6 +10,15 @@ body {
   overflow: hidden
 }
 
+a {
+  color: $green-text;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: $pink-text
+}
+
 .App {
   height: 100% !important;
   background: $light-bkg;
@@ -125,6 +134,16 @@ body {
   height: 15vh;
 }
 
+.Custom-list{
+  list-style-type: circle;
+  padding-inline-start: 25px;
+}
+
+.Custom-list li{
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
 .Spline-styling canvas {
   width: 50px !important;
   height: 50px !important;
@@ -151,6 +170,15 @@ body {
   margin-bottom: 5px;
   padding-bottom: 5px;
   font-size: x-large
+}
+
+.Clickable {
+  cursor: pointer;
+}
+
+.Clickable:hover div {
+  color: $pink-text;
+  transition: 0.2s;
 }
 
 .Info-border {
@@ -222,6 +250,15 @@ body {
 
   .Gradient-bkg {
     box-shadow: $light-box-mobile;
+  }
+
+  .Info-card-header-title {
+    flex-direction: column;
+  }
+  .Info-card-header-title div:last-child {
+    width: 100%;
+    color: $grey-text;
+    font-size: small;
   }
   
   .Spline-styling canvas {
