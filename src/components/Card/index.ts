@@ -1,2 +1,4 @@
 import Card from './Card';
-export {Card};
+import CardBody from './CardBody';
+import CardHeader from './CardHeader';
+export { Card, CardHeader, CardBody }

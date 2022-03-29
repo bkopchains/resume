@@ -12,12 +12,14 @@ body {
   overflow: hidden
 }
 
-a {
+.App-link {
   color: $green-text;
+  cursor: pointer;
   transition: $transition-time;
+  text-decoration: none;
 }
 
-a:hover {
+.App-link:hover {
   color: $pink-text
 }
 
@@ -79,21 +81,49 @@ a:hover {
   transform: skewY(-3deg);
 }
 
-.App-header-text {
+.App-header-content {
   margin: 0px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 10vh;
+  padding: 0vh 10vh;
+  width: calc(100% - 25vh);
+  align-items: initial;
+}
+
+.App-header-text {
+  margin: 0px;
   font-size: 13vh;
   mix-blend-mode: difference;
   opacity: 90%;
-  top: 10vh;
-  left: 10vh;
   color: $pink-text;
   transition: 0.5s;
 }
 
-.App-header-text:hover {
+// .App-header-text:hover {
+//   color: $green-text;
+//   cursor: pointer;
+// }
+
+
+.App-header-menu{
+  margin: 0px;
+  display: flex;
   color: $green-text;
-  cursor: pointer;
+  transform-origin: right bottom;
+  transform: skewY(-3deg);
+  font-size: large;
+  font-weight: 600;
+}
+.App-header-menu .App-link:active {
+  font-size: larger;
+  transition: 0.2s;
+}
+
+.App-header-menu .App-link{
+  height: 25px;
+  margin: 10px;
 }
 
 .App-header-subtext {
@@ -124,13 +154,10 @@ a:hover {
   padding: 0 10vh;
 }
 .App-body-scrollable {
-  color: $light-bkg;
+  background: $light-bkg;
   height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 .Body-spacer {
   height: 15vh;
@@ -245,6 +272,21 @@ a:hover {
     max-width: 100%;
   }
   
+  .App-header-content {
+    margin: 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 3vh;
+    padding: 0vh 2vh;
+    width: calc(100% - 4vh);
+    align-items: initial;
+  }
+
+  .App-header-menu .App-link {
+    margin-top: -10px;
+  }
+
   .App-header-text {
     font-size: 10vw;
     top: 4vh;
