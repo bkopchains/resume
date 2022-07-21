@@ -1,12 +1,22 @@
 import React from 'react';
-import { Resume } from './components/Resume';
-import { About } from './components/About';
-import { Routes, Route, Link } from "react-router-dom";
-import './styles/App.scss';
-import useWindowDimensions from './hooks/useWindowDimensions';
+import { Resume } from 'pages/Resume';
+import { Artwork } from 'pages/Artwork';
+import { Routes, Route, useLocation } from "react-router-dom";
+import 'styles/App.scss';
+import useWindowDimensions from 'hooks/useWindowDimensions';
+import { useTransition, a } from 'react-spring'
+import CustomLink from 'components/Shared/CustomLink';
+import { Home } from 'pages/Home';
 
 function App() {
+
   const { width } = useWindowDimensions();
+  const location = useLocation();
+  const transitions = useTransition(location, {
+    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
+  })
 
   return (
     <div className="App">
@@ -14,8 +24,9 @@ function App() {
         <div className="App-header-content">
           <p className='App-header-text Font-Bold'>Ben {width < 1000 ? "K." : "Kopchains"}</p>
           <div className='App-header-menu'>
-            <Link className='App-link' to='/'>Home</Link>
-            <Link className='App-link' to='resume'>Resume</Link>
+            <CustomLink to='/'>Home</CustomLink>
+            <CustomLink to='/resume'>Resume</CustomLink>
+            <CustomLink to='/artwork'>Artwork</CustomLink>
           </div>
         </div>
       </header>
@@ -25,10 +36,15 @@ function App() {
             {/* <p className='App-header-subtext Font-Thin'>Software Developer</p> */}
           </div>
           {/* react-router routes here */}
-          <Routes>
-            <Route path="/" element={<About />}/>
-            <Route path="/resume" element={<Resume />}/>
-          </Routes>
+          {transitions((styles, item) => (
+            <a.div style={styles}>
+              <Routes location={item}>
+                <Route path="/" element={<Home />}/>
+                <Route path="/resume" element={<Resume />}/>
+                <Route path="/artwork" element={<Artwork />}/>
+              </Routes>
+            </a.div>
+          ))}
         </div>
       </div>
     </div>

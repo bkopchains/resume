@@ -1,10 +1,13 @@
 import React, { FC, useState } from "react";
 import cardContext from "./cardContext";
 
+interface ICard {
+  defaultClosed?: boolean
+}
 
-const Card: FC = (props) => {
-  const { children } = props;
-  const [bodyOpen, setBodyOpen] = useState<boolean>(true);
+const Card: FC<ICard> = (props) => {
+  const { children, defaultClosed } = props;
+  const [bodyOpen, setBodyOpen] = useState<boolean>(defaultClosed ? !defaultClosed : true);
   const toggleBodyOpen = () => {
     setBodyOpen(!bodyOpen);
   }

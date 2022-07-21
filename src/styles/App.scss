@@ -155,7 +155,7 @@ body {
 }
 .App-body-scrollable {
   background: $light-bkg;
-  height: 100vh;
+  // height: 100vh;
 }
 
 
@@ -259,10 +259,23 @@ body {
   padding: 0 1vh;
 }
 
+.Resume-blurb {
+  margin: 2vh;
+  font-weight: 800;
+  color: $green-text;
+  font-size: xx-large
+}
+
 @media (max-width: 1500px) {
   .Flex-column {
     flex: 50%;
     max-width: 50%;
+  }
+  .Resume-blurb {
+    margin: 0vh 2vh;
+    font-weight: 800;
+    color: $green-text;
+    font-size: large
   }
 }
 
