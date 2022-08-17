@@ -1,3 +1,3 @@
-# 🚧 under contstruction 🚧
+# 🚧 under construction 🚧
 Portfolio/Resume website built in ReactJS
 
