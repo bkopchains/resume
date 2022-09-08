@@ -12,6 +12,42 @@ body {
   overflow: hidden
 }
 
+.About-Man, .About-Circle, .AM-Head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.About-Circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: $green-text 10px solid;
+  justify-content: center;
+  box-shadow: #0000004d 0px 3px 3px 0px;
+}
+
+.About-Man .AM-Body, .About-Man .AM-Head {
+  background-color: $green-text;
+  box-shadow: #0000004d 0px 3px 3px 0px;
+}
+
+.About-Man .AM-Body {
+  width: 120px;
+  height: 75px;
+  border-radius: 25px 25px 50px 50px;
+  margin-top: 10px;
+}
+
+.About-Man .AM-Head {
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
 .App-link {
   color: $green-text;
   cursor: pointer;
@@ -210,6 +246,11 @@ body {
     transition: $transition-time;
 }
 
+.Img-Artwork {
+  width: 100%; 
+  border-radius: 1vh
+}
+
 .Info-icon {
   transform: rotate(0deg);
 }
@@ -324,7 +365,7 @@ body {
   }
 
   .Flex-row {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 
   .Gradient-bkg {
