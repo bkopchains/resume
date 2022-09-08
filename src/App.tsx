@@ -6,7 +6,7 @@ import 'styles/App.scss';
 import useWindowDimensions from 'hooks/useWindowDimensions';
 import { useTransition, a } from 'react-spring'
 import CustomLink from 'components/Shared/CustomLink';
-import { Home } from 'pages/Home';
+import { About } from 'pages/About';
 
 function App() {
 
@@ -24,7 +24,7 @@ function App() {
         <div className="App-header-content">
           <p className='App-header-text Font-Bold'>Ben {width < 1000 ? "K." : "Kopchains"}</p>
           <div className='App-header-menu'>
-            <CustomLink to='/'>Home</CustomLink>
+            {/* <CustomLink to='/'>About</CustomLink> */}
             <CustomLink to='/resume'>Resume</CustomLink>
             <CustomLink to='/artwork'>Artwork</CustomLink>
           </div>
@@ -36,15 +36,15 @@ function App() {
             {/* <p className='App-header-subtext Font-Thin'>Software Developer</p> */}
           </div>
           {/* react-router routes here */}
-          {transitions((styles, item) => (
-            <a.div style={styles}>
-              <Routes location={item}>
-                <Route path="/" element={<Home />}/>
+          {/* {transitions((styles, item) => (
+            <a.div style={styles}> */}
+              <Routes>
+                {/* <Route path="/" element={<About />}/> */}
                 <Route path="/resume" element={<Resume />}/>
                 <Route path="/artwork" element={<Artwork />}/>
               </Routes>
-            </a.div>
-          ))}
+            {/* </a.div>
+          ))} */}
         </div>
       </div>
     </div>

@@ -8,12 +8,13 @@ const Resume: FC = () => {
     <>
       <div className='Flex-row'>
         <div className='Resume-blurb'>
-        Full-stack Web Developer (C# .NET / TypeScript / React) with an interest in graphic design and 3D modeling.
+        Full-stack Web Developer (C# .NET / TypeScript / React) with an interest in graphic design
         </div>
       </div>
       <div className='Flex-row'>
         <div className='Flex-column'>
           <div className='Section-header'>
+            {/* <img className='Spline-styling' alt="briefcase icon" src={briefcase}/> */}
             <Spline className='Spline-styling' scene="https://prod.spline.design/Qeh6p3dA8CfnKiC1/scene.spline" />
             <p className='Section-header-text Font-Bold'>Employment</p>
           </div>
@@ -173,7 +174,7 @@ Full-stack developer with a passion for digital art and front-end design. Experi
           <Card>
             <CardHeader
               titleText='Azure Developer Associate'
-              rightDetailText='2021-2023'
+              rightDetailText='2021'
               subTitleText='Microsoft AZ-204 Certification'
             />
             <CardBody>
