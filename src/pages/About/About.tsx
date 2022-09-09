@@ -1,16 +1,12 @@
 import React, { FC } from 'react'
+import {useNavigate} from 'react-router-dom';
+
 
 const About: FC = () => {
+  const navigate = useNavigate();
   return (
-    <div className='Flex-row'>
-      <div>🚧About Me🚧</div>
-      <div className='About-Man'>
-        <div className='About-Circle'>
-          <div className='AM-Head'>
-          </div>
-          <div className='AM-Body' />
-        </div>
-      </div>
+    <div style={{textAlign: 'center', padding: '50px'}}>
+      <div style={{cursor: 'pointer'}} onClick={() => navigate(-1)}>🚧Resume 3 Coming Soon🚧</div>
     </div>
   )
 }

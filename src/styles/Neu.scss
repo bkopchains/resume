@@ -8,73 +8,70 @@ $grey-text: #808080;
 
 $transition-time: 0.2s;
 
-body {
-  overflow: hidden
-}
 
-.About-Man, .About-Circle, .AM-Head {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
+// .neu-About-Man, .neu-About-Circle, .neu-AM-Head {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   height: 100%;
+//   align-items: center;
+// }
 
-.About-Circle {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-  border: $green-text 10px solid;
-  justify-content: center;
-  box-shadow: #0000004d 0px 3px 3px 0px;
-}
+// .neu-About-Circle {
+//   width: 250px;
+//   height: 250px;
+//   border-radius: 250px;
+//   border: $green-text 10px solid;
+//   justify-content: center;
+//   box-shadow: #0000004d 0px 3px 3px 0px;
+// }
 
-.About-Man .AM-Body, .About-Man .AM-Head {
-  background-color: $green-text;
-  box-shadow: #0000004d 0px 3px 3px 0px;
-}
+// .neu-About-Man .neu-AM-Body, .neu-About-Man .neu-AM-Head {
+//   background-color: $green-text;
+//   box-shadow: #0000004d 0px 3px 3px 0px;
+// }
 
-.About-Man .AM-Body {
-  width: 120px;
-  height: 75px;
-  border-radius: 25px 25px 50px 50px;
-  margin-top: 10px;
-}
+// .neu-About-Man .neu-AM-Body {
+//   width: 120px;
+//   height: 75px;
+//   border-radius: 25px 25px 50px 50px;
+//   margin-top: 10px;
+// }
 
-.About-Man .AM-Head {
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-}
+// .neu-About-Man .neu-AM-Head {
+//   justify-content: center;
+//   width: 100px;
+//   height: 100px;
+//   border-radius: 100px;
+// }
 
-.App-link {
+.neu-App-link {
   color: $green-text;
   cursor: pointer;
   transition: $transition-time;
   text-decoration: none;
 }
 
-.App-link:hover {
+.neu-App-link:hover {
   color: $pink-text
 }
 
-.App {
+.neu-App {
   height: 100% !important;
   background: $light-bkg;
 }
 
-.Font-Bold {
+.neu-Font-Bold {
   font-family: "Heebo", sans-serif;
   font-weight: 900;
 }
 
-.Font-Thin {
+.neu-Font-Thin {
   font-family: "Heebo", sans-serif;
   font-weight: 200;
 }
 
-.App-header {
+.neu-App-header {
   background-color: #1f2229;
   display: flex;
   flex-direction: column;
@@ -86,7 +83,7 @@ body {
   height: 75px;
 }
 
-.Gradient-bkg {
+.neu-Gradient-bkg {
   color: $light-bkg;
   background: $light-bkg;
   box-shadow: $light-box;
@@ -105,7 +102,7 @@ body {
   // animation: Gradient 25s ease infinite;
 }
 
-.App-header::after {
+.neu-App-header::after {
   content: "";
   width: 100%;
   height: 200%;
@@ -117,7 +114,7 @@ body {
   transform: skewY(-3deg);
 }
 
-.App-header-content {
+.neu-App-header-content {
   margin: 0px;
   position: relative;
   display: flex;
@@ -128,7 +125,7 @@ body {
   align-items: initial;
 }
 
-.App-header-text {
+.neu-App-header-text {
   margin: 0px;
   font-size: 13vh;
   mix-blend-mode: difference;
@@ -137,13 +134,13 @@ body {
   transition: 0.5s;
 }
 
-// .App-header-text:hover {
+// .neu-App-header-text:hover {
 //   color: $green-text;
 //   cursor: pointer;
 // }
 
 
-.App-header-menu{
+.neu-App-header-menu{
   margin: 0px;
   display: flex;
   color: $green-text;
@@ -152,17 +149,17 @@ body {
   font-size: large;
   font-weight: 600;
 }
-.App-header-menu .App-link:active {
+.neu-App-header-menu .neu-App-link:active {
   font-size: larger;
   transition: 0.2s;
 }
 
-.App-header-menu .App-link{
+.neu-App-header-menu .neu-App-link{
   height: 25px;
   margin: 10px;
 }
 
-.App-header-subtext {
+.neu-App-header-subtext {
   margin: 0px;
   position: relative;
   top: 7vh;
@@ -172,49 +169,49 @@ body {
   font-size: xx-large;
   font-weight: 400;
 }
-.Section-header-text {
+.neu-Section-header-text {
   color: $green-text;
   font-size: xx-large;
   font-weight: 800;
   margin: 0px;
 }
-.Section-header {
+.neu-Section-header {
   margin-left: 2vh;
   display: flex;
   align-items: center;
 }
 
-.App-body {
+.neu-App-body {
   height: calc(100vh - 75px);
   overflow-y: scroll;
   padding: 0 10vh;
 }
-.App-body-scrollable {
+.neu-App-body-scrollable {
   background: $light-bkg;
   // height: 100vh;
 }
 
 
-.Body-spacer {
+.neu-Body-spacer {
   height: 15vh;
 }
 
-.Custom-list{
+.neu-Custom-list{
   list-style-type: circle;
   padding-inline-start: 25px;
 }
 
-.Custom-list li{
+.neu-Custom-list li{
   margin-bottom: 10px;
   font-size: smaller;
 }
 
-.Spline-styling canvas {
+.neu-Spline-styling canvas {
   width: 50px !important;
   height: 50px !important;
 }
 
-.Info-card {
+.neu-Info-card {
   font-size: 20px;
   font-weight: 400;
   text-align: justify;
@@ -224,83 +221,83 @@ body {
   //background: rgba(255, 255, 255, 0.192);
   border-radius: 1vh;
   min-height: 1vh;
-  //border: .25vh solid rgba(255, 255, 255, 0.698);
+  //border: .neu-25vh solid rgba(255, 255, 255, 0.698);
   //box-shadow: inset 00px 00px 1vh white;
   background: $light-bkg;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
-.Info-card-header {
+.neu-Info-card-header {
   width: 100%;
   margin-bottom: 5px;
   padding-bottom: 5px;
   font-size: x-large
 }
 
-.Clickable {
+.neu-Clickable {
   cursor: pointer;
 }
 
-.Clickable:hover div, .Clickable:hover div .Info-icon  {
+.neu-Clickable:hover div, .neu-Clickable:hover div .neu-Info-icon  {
     color: $pink-text;
     transition: $transition-time;
 }
 
-.Img-Artwork {
+.neu-Img-Artwork {
   width: 100%; 
   border-radius: 1vh
 }
 
-.Info-icon {
+.neu-Info-icon {
   transform: rotate(0deg);
 }
 
-.Info-icon.open {
+.neu-Info-icon.neu-open {
   transform: rotate(180deg);
 }
 
-.Info-card-body{
+.neu-Info-card-body{
   max-height: 1000px;
   transition: max-height 0.5s ease-out;
 }
 
-.Info-card-body.collapsed {
+.neu-Info-card-body.neu-collapsed {
   max-height: 0px;
   overflow: hidden;
 }
 
-.Info-icon {
+.neu-Info-icon {
   color: $grey-text;
 }
 
-.Info-border {
+.neu-Info-border {
   border-bottom: 1px solid lightgray;
 }
 
-.Info-card-header-title {
+.neu-Info-card-header-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   font-weight: 600;
   color: $green-text;
 }
-.Info-card-header-subtitle {
+.neu-Info-card-header-subtitle {
   width: 100%;
   color: $grey-text;
   font-size: small;
 }
 
-.Flex-column {
+.neu-Flex-column {
   flex: 33%;
   max-width: 33%;
 }
-.Flex-row {
+.neu-Flex-row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 1vh;
 }
 
-.Resume-blurb {
+.neu-Resume-blurb {
   margin: 2vh;
   font-weight: 800;
   color: $green-text;
@@ -308,11 +305,11 @@ body {
 }
 
 @media (max-width: 1500px) {
-  .Flex-column {
+  .neu-Flex-column {
     flex: 50%;
     max-width: 50%;
   }
-  .Resume-blurb {
+  .neu-Resume-blurb {
     margin: 0vh 2vh;
     font-weight: 800;
     color: $green-text;
@@ -321,12 +318,12 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .Flex-column {
+  .neu-Flex-column {
     flex: 100%;
     max-width: 100%;
   }
   
-  .App-header-content {
+  .neu-App-header-content {
     margin: 0px;
     position: relative;
     display: flex;
@@ -337,51 +334,51 @@ body {
     align-items: initial;
   }
 
-  .App-header-menu .App-link {
+  .neu-App-header-menu .neu-App-link {
     margin-top: -10px;
   }
 
-  .App-header-text {
+  .neu-App-header-text {
     font-size: 10vw;
     top: 4vh;
     left: 4vh;
   }
 
-  .App-header {
+  .neu-App-header {
     height: 30px
   }
   
-  .App-body {
+  .neu-App-body {
     height: calc(100vh - 30px);
     padding: 0 1vh;
   }
 
-  .App-header-subtext {
+  .neu-App-header-subtext {
     display: none;
   }
 
-  .Body-spacer {
+  .neu-Body-spacer {
     height: 7vh;
   }
 
-  .Flex-row {
+  .neu-Flex-row {
     padding-bottom: 20px;
   }
 
-  .Gradient-bkg {
+  .neu-Gradient-bkg {
     box-shadow: $light-box-mobile;
   }
 
-  .Info-card-header-title {
+  .neu-Info-card-header-title {
     flex-direction: column;
   }
-  .Info-card-header-title div:last-child {
+  .neu-Info-card-header-title div:last-child {
     width: 100%;
     color: $grey-text;
     font-size: small;
   }
   
-  .Spline-styling canvas {
+  .neu-Spline-styling canvas {
     width: 50px !important;
     height: 50px !important;
   }

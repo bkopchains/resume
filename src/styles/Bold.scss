@@ -1,0 +1,83 @@
+$light-bkg: #e0e0e0;
+$light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+$light-box-mobile: 5px 2px 20px #bebebe, -20px -20px 60px #ffffff;
+
+$tan: #FFFED8;
+$champagne: #EDCC99;
+$lightorange: #DB995A;
+$orange: #DA7635;
+$flame: #E24E1B;
+$rust: #A44829;
+$brown: #654236;
+$smoke: #1B110E;
+
+$transition-time: 0.2s;
+$default-padding: 5vh;
+
+.bold-App {
+  height: 100% !important;
+  font-family: "Kanit", sans-serif;
+}
+
+.bold-App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $default-padding;
+}
+
+
+.bold-App-header-text {
+  margin: 0px;
+  font-size: 13vh;
+  color: $smoke;
+  transition: 0.5s;
+  font-weight: 800;
+}
+
+.bold-blurb {
+  padding: $default-padding;
+  font-size: 8vh;
+  font-weight: 100;
+}
+
+.bold-links {
+  padding: 1vh;
+}
+
+.bold-App-link {
+  color: $brown;
+  margin-left: 1vh;
+  font-size: 4vh;
+  cursor: pointer;
+  transition: $transition-time;
+  text-decoration: none;
+}
+.bold-App-link:hover {
+  color: $flame
+}
+
+.bold-bg-white {
+  background-color: #fff;
+}
+.bold-bg-tan {
+  background-color: $tan;
+}
+.bold-bg-champagne {
+  background-color: $champagne;
+}
+.bold-bg-lightorange {
+  background-color: $lightorange;
+}
+.bold-bg-orange {
+  background-color: $orange;
+}
+.bold-bg-flame {
+  background-color: $flame;
+}
+.bold-bg-rust {
+  background-color: $rust;
+}
+.bold-bg-brown {
+  background-color: $brown;
+}
