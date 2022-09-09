@@ -13,7 +13,7 @@ const Card: FC<ICard> = (props) => {
   }
 
   return <cardContext.Provider value={{ bodyOpen, toggleBodyOpen }}>
-    <div className='Info-card'>
+    <div className='neu-Info-card'>
       {children}
     </div>
   </cardContext.Provider>

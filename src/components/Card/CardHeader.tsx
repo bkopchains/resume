@@ -31,16 +31,16 @@ const CardHeader: FC<ICardHeader> = (props) => {
 
   return (
     <div
-      className={`Info-card-header ${noBorder ? "" : "Info-border"}  ${accordion ? "Clickable" : ""}`}
+      className={`neu-Info-card-header ${noBorder ? "" : "neu-Info-border"}  ${accordion ? "neu-Clickable" : ""}`}
       onClick={accordionClick}
     >
-      <div className="Info-card-header-title">
+      <div className="neu-Info-card-header-title">
         <div>{titleText}</div>
         <div>{rightDetailText}</div>
       </div>
       <div style={{ display: 'flex' }}>
-        <div className="Info-card-header-subtitle">{subTitle}</div>
-        {accordion && <FontAwesomeIcon icon={faAngleUp} className={`Info-icon ${bodyOpen ? "open" : ""}`} />}
+        <div className="neu-Info-card-header-subtitle">{subTitle}</div>
+        {accordion && <FontAwesomeIcon icon={faAngleUp} className={`neu-Info-icon ${bodyOpen ? "neu-open" : ""}`} />}
       </div>
     </div>
   )
