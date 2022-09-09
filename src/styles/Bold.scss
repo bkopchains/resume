@@ -2,6 +2,8 @@ $light-bkg: #e0e0e0;
 $light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 $light-box-mobile: 5px 2px 20px #bebebe, -20px -20px 60px #ffffff;
 
+$thistle: #BEB2D4;
+$blue: #C3E8E2;
 $tan: #FFFED8;
 $champagne: #EDCC99;
 $lightorange: #DB995A;
@@ -12,24 +14,55 @@ $brown: #654236;
 $smoke: #1B110E;
 
 $transition-time: 0.2s;
-$default-padding: 5vh;
+$default-padding: 3vw;
 
 .bold-App {
-  height: 100% !important;
+  height: 100vh;
   font-family: "Kanit", sans-serif;
 }
 
 .bold-App-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: $default-padding;
 }
 
+.bold-Section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $default-padding;
+  height: 500vh;
+}
+.bold-Section-title-text {
+  font-size: 6vw;
+  color: $smoke;
+  transition: 0.5s;
+  font-weight: 800;
+}
+.bold-Section-subtext {
+  font-size: 1vw;
+  width: 25vw;
+  height: 200vh;
+  padding-top: 12vw;
+}
+
+.scroll-anchor{
+  scroll-snap-align: end;
+}
+.scroll-anchor-start{
+  scroll-snap-align: start;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: $default-padding;
+}
 
 .bold-App-header-text {
-  margin: 0px;
-  font-size: 13vh;
+  font-size: 7vw;
   color: $smoke;
   transition: 0.5s;
   font-weight: 800;
@@ -37,8 +70,9 @@ $default-padding: 5vh;
 
 .bold-blurb {
   padding: $default-padding;
-  font-size: 8vh;
+  font-size: 3vw;
   font-weight: 100;
+  height: 90vh;
 }
 
 .bold-links {
@@ -47,8 +81,8 @@ $default-padding: 5vh;
 
 .bold-App-link {
   color: $brown;
-  margin-left: 1vh;
-  font-size: 4vh;
+  margin-left: 1vw;
+  font-size: 2vw;
   cursor: pointer;
   transition: $transition-time;
   text-decoration: none;
@@ -57,27 +91,51 @@ $default-padding: 5vh;
   color: $flame
 }
 
-.bold-bg-white {
+.scroll-container{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Chrome, Safari and Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.text-white{
+  color: #fff;
+}
+.bg-white {
   background-color: #fff;
 }
-.bold-bg-tan {
+.bg-thistle {
+  background-color: $thistle;
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-tan {
   background-color: $tan;
 }
-.bold-bg-champagne {
+.bg-champagne {
   background-color: $champagne;
 }
-.bold-bg-lightorange {
+.bg-lightorange {
   background-color: $lightorange;
 }
-.bold-bg-orange {
+.bg-orange {
   background-color: $orange;
 }
-.bold-bg-flame {
+.bg-flame {
   background-color: $flame;
 }
-.bold-bg-rust {
+.bg-rust {
   background-color: $rust;
 }
-.bold-bg-brown {
+.bg-brown {
   background-color: $brown;
+}
+.bg-smoke {
+  background-color: $smoke;
 }

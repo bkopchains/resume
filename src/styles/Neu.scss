@@ -149,11 +149,6 @@ $transition-time: 0.2s;
   font-size: large;
   font-weight: 600;
 }
-.neu-App-header-menu .neu-App-link:active {
-  font-size: larger;
-  transition: 0.2s;
-}
-
 .neu-App-header-menu .neu-App-link{
   height: 25px;
   margin: 10px;
@@ -239,8 +234,13 @@ $transition-time: 0.2s;
 }
 
 .neu-Clickable:hover div, .neu-Clickable:hover div .neu-Info-icon  {
-    color: $pink-text;
-    transition: $transition-time;
+  color: $pink-text;
+  transition: $transition-time;
+}
+
+
+.neu-icon  {
+  color: $pink-text;
 }
 
 .neu-Img-Artwork {
