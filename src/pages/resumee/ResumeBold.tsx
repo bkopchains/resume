@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import CustomLink from 'components/Shared/CustomLinkBold';
-import 'styles/Bold.scss';
 import useWindowDimensions from 'hooks/useWindowDimensions';
 
 const ResumeBold: FC = () => {
@@ -16,9 +15,9 @@ const ResumeBold: FC = () => {
         <div>
           <div className='bold-links'>
             {/* <CustomLink to='/'>About</CustomLink> */}
-            <CustomLink to='/resume'>Resume</CustomLink>
-            <CustomLink to='/resumee'>Resume</CustomLink>
-            <CustomLink style={{ pointerEvents: 'none' }} title="coming soon" to='/resumeee'>Resume</CustomLink>
+            <CustomLink href='/resume'>Resume</CustomLink>
+            <CustomLink href='/resumee'>Resume</CustomLink>
+            <CustomLink style={{ pointerEvents: 'none' }} title="coming soon" href='/resumeee'>Resume</CustomLink>
           </div>
         </div>
       </div>

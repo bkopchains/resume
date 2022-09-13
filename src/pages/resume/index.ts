@@ -1,2 +1,2 @@
 import Resume from './ResumeNeu';
-export { Resume };
+export default Resume;
