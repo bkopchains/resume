@@ -74,10 +74,10 @@ const ResumeNeu: FC = () => {
                   Provided full-stack support and worked with global clientele on two prominent web applications:
                   <p>Cobra (CSHTML/.NET/SQL):</p>
                   {/* <CardHeader
-titleText='Cobra'
-rightDetailText=''
-subTitleText='CSHTML/.NET/SQL'
-/> */}
+                  titleText='Cobra'
+                  rightDetailText=''
+                  subTitleText='CSHTML/.NET/SQL'
+                  /> */}
                   <ul className='neu-Custom-list'>
                     <li>Global emergency management software used to track ongoing incidents and conduct preparedness training exercises</li>
                     <li>Developed and customized features to align with the client’s requested capabilities.</li>
@@ -200,7 +200,7 @@ Full-stack developer with a passion for digital art and front-end design. Experi
             </div>
             <div className='neu-Flex-column'>
               <div className='neu-Section-header'>
-                <FontAwesomeIcon icon={faAward} className={'neu-icon'} /> 
+                <FontAwesomeIcon icon={faAward} className={'neu-icon'} />
                 {/* <Suspense fallback={<FontAwesomeIcon icon={faAward} className={'neu-icon'} />}> */}
                 {/* <Spline className='neu-Spline-styling' scene="https://prod.spline.design/hrRByXKmZlrg1f8v/scene.spline" /> */}
                 {/* </Suspense> */}
