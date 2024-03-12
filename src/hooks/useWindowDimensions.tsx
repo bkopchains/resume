@@ -24,4 +24,6 @@ const useWindowDimensions = () => {
   return ({width: 0, height: 0})
 }
 
+//this don't work no mo
+
 export default useWindowDimensions
