@@ -2,7 +2,6 @@ import React, { FC, Suspense } from 'react';
 // import Spline from '@splinetool/react-spline'; //TODO: Maybe replace with threeJS if it loads faster - do the models again in blender
 import { Card, CardBody, CardHeader } from 'components/Card';
 import CustomLink from 'components/Shared/CustomLinkNeu';
-import useWindowDimensions from 'hooks/useWindowDimensions';
 import { faAward, faBriefcase, faEnvelope, faGraduationCap, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

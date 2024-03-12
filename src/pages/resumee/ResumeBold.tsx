@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
 import CustomLink from 'components/Shared/CustomLinkBold';
-import useWindowDimensions from 'hooks/useWindowDimensions';
+// import useWindowDimensions from 'hooks/useWindowDimensions';
 
 const ResumeBold: FC = () => {
 
-  const { width } = useWindowDimensions();
+  // const { width } = useWindowDimensions();
   return (
     <div className="bold-App">
       <div className={"flexRow bg-tan"} style={{ height: "100vh", justifyContent: "space-between" }}>
         <div className={'bg-lightorange bold-App-header'} >
-          <div className='bold-App-header-text sticky'>Ben {width < 1000 ? "K." : "Kopchains"}</div>
+          <div className='bold-App-header-text sticky'>Ben Kopchains</div>
           <div>Hello!</div>
         </div>
         <div>
