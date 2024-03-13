@@ -18,7 +18,7 @@ export default function App(props: AppProps) {
         <meta charSet="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={'true'} />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600;900&display=swap"
           rel="stylesheet"

@@ -2,7 +2,8 @@ import React, { FC, useState } from "react";
 import cardContext from "./cardContext";
 
 interface ICard {
-  defaultClosed?: boolean
+  defaultClosed?: boolean;
+  children?: React.ReactNode;
 }
 
 const Card: FC<ICard> = (props) => {

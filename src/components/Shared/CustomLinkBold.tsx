@@ -7,6 +7,7 @@ interface ICustomLink extends LinkProps {
   href: string;
   style?: React.CSSProperties
   title?: string;
+  children?: React.ReactNode;
 }
 
 const CustomLinkNeu: FC<ICustomLink> = (props) => {
