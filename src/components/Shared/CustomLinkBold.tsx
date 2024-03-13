@@ -1,19 +1,27 @@
-import React, { FC }  from 'react';
-import { Link, LinkProps, useLocation } from "react-router-dom";
+import React, { FC } from 'react';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router'
+
 
 interface ICustomLink extends LinkProps {
-  to: string;
+  href: string;
+  style?: React.CSSProperties
+  title?: string;
 }
 
 const CustomLinkNeu: FC<ICustomLink> = (props) => {
-  const { to, children } = props;
-  const location = useLocation();
+  const { href, children } = props;
+  const router = useRouter();
   return (
-    <Link style={{
-      pointerEvents: location.pathname !== to ? 'inherit' : 'none',
-      color: location.pathname !== to ? "" : "#E24E1B"
-    }} className='bold-App-link' to={to}>{children}</Link>
+    <Link href={href}>
+      <a style={{
+        pointerEvents: router.pathname !== href ? 'inherit' : 'none',
+        color: router.pathname !== href ? "" : "#E24E1B"
+      }} className='bold-App-link'>
+        {children}
+      </a>
+    </Link>
   )
-} 
+}
 
 export default CustomLinkNeu

@@ -1,2 +1,2 @@
 import Resume from './ResumeBold';
-export { Resume };
+export default Resume;

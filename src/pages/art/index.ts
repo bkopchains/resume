@@ -1,2 +1,2 @@
 import Artwork from './Artwork';
-export { Artwork };
+export default Artwork;

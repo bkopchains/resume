@@ -1,24 +1,23 @@
 import React, { FC } from 'react';
 import CustomLink from 'components/Shared/CustomLinkBold';
-import 'styles/Bold.scss';
-import useWindowDimensions from 'hooks/useWindowDimensions';
+// import useWindowDimensions from 'hooks/useWindowDimensions';
 
 const ResumeBold: FC = () => {
 
-  const { width } = useWindowDimensions();
+  // const { width } = useWindowDimensions();
   return (
     <div className="bold-App">
       <div className={"flexRow bg-tan"} style={{ height: "100vh", justifyContent: "space-between" }}>
         <div className={'bg-lightorange bold-App-header'} >
-          <div className='bold-App-header-text sticky'>Ben {width < 1000 ? "K." : "Kopchains"}</div>
+          <div className='bold-App-header-text sticky'>Ben Kopchains</div>
           <div>Hello!</div>
         </div>
         <div>
           <div className='bold-links'>
             {/* <CustomLink to='/'>About</CustomLink> */}
-            <CustomLink to='/resume'>Resume</CustomLink>
-            <CustomLink to='/resumee'>Resume</CustomLink>
-            <CustomLink style={{ pointerEvents: 'none' }} title="coming soon" to='/resumeee'>Resume</CustomLink>
+            <CustomLink href='/resume'>Resume</CustomLink>
+            <CustomLink href='/resumee'>Resume</CustomLink>
+            <CustomLink style={{ pointerEvents: 'none' }} title="coming soon" href='/resumeee'>Resume</CustomLink>
           </div>
         </div>
       </div>
