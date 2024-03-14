@@ -115,19 +115,19 @@ $transition-time: 0.2s;
 }
 
 .neu-App-header-content {
-  margin: 0px;
+  margin: 0;
   position: relative;
   display: flex;
   justify-content: space-between;
-  top: 10vh;
-  padding: 0vh 10vh;
-  width: calc(100% - 25vh);
+  top: 4.5em;
+  padding: 0rem 5rem;
+  width: calc(100% - 10rem);
   align-items: initial;
 }
 
 .neu-App-header-text {
-  margin: 0px;
-  font-size: 13vh;
+  margin: 2rem 0 0 0;
+  font-size: 5rem;
   mix-blend-mode: difference;
   opacity: 90%;
   color: $pink-text;
@@ -157,8 +157,8 @@ $transition-time: 0.2s;
 .neu-App-header-subtext {
   margin: 0px;
   position: relative;
-  top: 7vh;
-  right: 3vh;
+  top: 7rem;
+  right: 3rem;
   text-align: right;
   color: black;
   font-size: xx-large;
@@ -171,7 +171,7 @@ $transition-time: 0.2s;
   margin: 0px;
 }
 .neu-Section-header {
-  margin-left: 2vh;
+  margin-left: 2rem;
   display: flex;
   align-items: center;
 }
@@ -179,16 +179,16 @@ $transition-time: 0.2s;
 .neu-App-body {
   height: calc(100vh - 75px);
   overflow-y: scroll;
-  padding: 0 10vh;
+  padding: 0 3rem;
 }
 .neu-App-body-scrollable {
   background: $light-bkg;
-  // height: 100vh;
+  // height: 100rem;
 }
 
 
 .neu-Body-spacer {
-  height: 15vh;
+  height: 5rem;
 }
 
 .neu-Custom-list{
@@ -207,17 +207,17 @@ $transition-time: 0.2s;
 }
 
 .neu-Info-card {
-  font-size: 20px;
+  font-size: large;
   font-weight: 400;
   text-align: justify;
-  padding: 2vh;
-  margin: 2vh;
+  padding: 1rem;
+  margin: 0rem 1rem 2rem 1rem;
   color: black;
   //background: rgba(255, 255, 255, 0.192);
-  border-radius: 1vh;
-  min-height: 1vh;
-  //border: .neu-25vh solid rgba(255, 255, 255, 0.698);
-  //box-shadow: inset 00px 00px 1vh white;
+  border-radius: 1rem;
+  min-height: 1rem;
+  //border: .neu-25rem solid rgba(255, 255, 255, 0.698);
+  //box-shadow: inset 00px 00px 1rem white;
   background: $light-bkg;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
@@ -226,7 +226,7 @@ $transition-time: 0.2s;
   width: 100%;
   margin-bottom: 5px;
   padding-bottom: 5px;
-  font-size: x-large
+  font-size: large
 }
 
 .neu-Clickable {
@@ -246,7 +246,7 @@ $transition-time: 0.2s;
 
 .neu-Img-Artwork {
   width: 100%; 
-  border-radius: 1vh
+  border-radius: 1rem
 }
 
 .neu-Info-icon {
@@ -295,30 +295,30 @@ $transition-time: 0.2s;
 .neu-Flex-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1vh;
+  padding: 0 1rem;
 }
 
 .neu-Resume-blurb {
-  margin: 2vh;
+  margin: 2rem;
   font-weight: 800;
   color: $green-text;
   font-size: xx-large
 }
 
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1500px) {
   .neu-Flex-column {
     flex: 50%;
     max-width: 50%;
   }
   .neu-Resume-blurb {
-    margin: 0vh 2vh;
+    margin: 0rem 2rem;
     font-weight: 800;
     color: $green-text;
     font-size: large
   }
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .neu-Flex-column {
     flex: 100%;
     max-width: 100%;
@@ -329,9 +329,9 @@ $transition-time: 0.2s;
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: 3vh;
-    padding: 0vh 2vh;
-    width: calc(100% - 4vh);
+    top: 3rem;
+    padding: 0rem 2rem;
+    width: calc(100% - 4rem);
     align-items: initial;
   }
 
@@ -340,9 +340,9 @@ $transition-time: 0.2s;
   }
 
   .neu-App-header-text {
-    font-size: 10vw;
-    top: 4vh;
-    left: 4vh;
+    font-size: 10rem;
+    top: 4rem;
+    left: 4rem;
   }
 
   .neu-App-header {
@@ -350,8 +350,8 @@ $transition-time: 0.2s;
   }
   
   .neu-App-body {
-    height: calc(100vh - 30px);
-    padding: 0 1vh;
+    height: calc(100rem - 30px);
+    padding: 0 1rem;
   }
 
   .neu-App-header-subtext {
@@ -359,7 +359,7 @@ $transition-time: 0.2s;
   }
 
   .neu-Body-spacer {
-    height: 7vh;
+    height: 7rem;
   }
 
   .neu-Flex-row {

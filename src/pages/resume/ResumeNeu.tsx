@@ -38,15 +38,31 @@ const ResumeNeu: FC = () => {
               <div className='neu-Section-header'>
                 {/* <img className='neu-Spline-styling' alt="briefcase icon" src={briefcase}/> */}
                 <FontAwesomeIcon icon={faBriefcase} className={'neu-icon'} />
-                {/* <Suspense fallback={<FontAwesomeIcon icon={faBriefcase} className={'neu-icon'} />}> */}
-                {/* <Spline className='neu-Spline-styling' scene="https://prod.spline.design/Qeh6p3dA8CfnKiC1/scene.spline" /> */}
-                {/* </Suspense> */}
                 <p className='neu-Section-header-text neu-Font-Bold'>Employment</p>
               </div>
               <Card>
                 <CardHeader
+                  titleText='Software Engineer III'
+                  rightDetailText='Jan 2023 - Present'
+                  subTitleText='JP Morgan Chase & Co.'
+                  accordion
+                />
+                <CardBody>
+                  <p>
+                    Transitioned an internal Commercial Investment Bank application from an on-prem .NET Framework monolith to AWS-hosted .NET Core 6 microservices with a React frontend.
+                  </p>
+                  <p>
+                    Collaborated with the operations team to develop user-readable React dashboards that track and modify statuses of trades and transactions through the application.
+                  </p>
+                  <p>
+                    Assisted in improving scrum processes and cutting down unnecessary meeting time.
+                  </p>
+                </CardBody>
+              </Card>
+              <Card defaultClosed>
+                <CardHeader
                   titleText='Tech Lead'
-                  rightDetailText='May 2021-Present'
+                  rightDetailText='May 2021 - Jan2023'
                   subTitleText='DYNAMIS INC.'
                   accordion
                 />
@@ -65,7 +81,7 @@ const ResumeNeu: FC = () => {
               <Card defaultClosed>
                 <CardHeader
                   titleText='Software Developer'
-                  rightDetailText='Jan 2020-Present'
+                  rightDetailText='Jan 2020 - Jan 2023'
                   subTitleText='DYNAMIS INC.'
                   accordion
                 />
@@ -93,7 +109,7 @@ const ResumeNeu: FC = () => {
               <Card defaultClosed>
                 <CardHeader
                   titleText='Junior Developer'
-                  rightDetailText={'Oct 2018-Jan 2020'}
+                  rightDetailText='Oct 2018 - Jan 2020'
                   subTitleText='DYNAMIS INC.'
                   accordion
                 />
@@ -105,9 +121,6 @@ const ResumeNeu: FC = () => {
             <div className='neu-Flex-column'>
               <div className='neu-Section-header'>
                 <FontAwesomeIcon icon={faGraduationCap} className={'neu-icon'} />
-                {/* <Suspense fallback={<FontAwesomeIcon icon={faGraduationCap} className={'neu-icon'} />}> */}
-                {/* <Spline className='neu-Spline-styling' scene="https://prod.spline.design/ttVyXTELSLIeFU-l/scene.spline" /> */}
-                {/* </Suspense> */}
                 <p className='neu-Section-header-text neu-Font-Bold'>Education</p>
               </div>
               <Card>
@@ -128,9 +141,6 @@ const ResumeNeu: FC = () => {
               </Card>
               <div className='neu-Section-header'>
                 <FontAwesomeIcon icon={faScrewdriverWrench} className={'neu-icon'} />
-                {/* <Suspense fallback={<FontAwesomeIcon icon={faScrewdriverWrench} className={'neu-icon'} />}> */}
-                {/* <Spline className='neu-Spline-styling' scene="https://prod.spline.design/indqQOtEo5ZAtP2T/scene.spline" /> */}
-                {/* </Suspense> */}
                 <p className='neu-Section-header-text neu-Font-Bold'>Skills</p>
               </div>
               <Card defaultClosed>
@@ -200,9 +210,6 @@ Full-stack developer with a passion for digital art and front-end design. Experi
             <div className='neu-Flex-column'>
               <div className='neu-Section-header'>
                 <FontAwesomeIcon icon={faAward} className={'neu-icon'} />
-                {/* <Suspense fallback={<FontAwesomeIcon icon={faAward} className={'neu-icon'} />}> */}
-                {/* <Spline className='neu-Spline-styling' scene="https://prod.spline.design/hrRByXKmZlrg1f8v/scene.spline" /> */}
-                {/* </Suspense> */}
                 <p className='neu-Section-header-text neu-Font-Bold'>Certifications</p>
               </div>
               <Card>
@@ -225,9 +232,6 @@ Full-stack developer with a passion for digital art and front-end design. Experi
               </Card>
               <div className='neu-Section-header'>
                 <FontAwesomeIcon icon={faEnvelope} className={'neu-icon'} />
-                {/* <Suspense fallback={<FontAwesomeIcon icon={faEnvelope} className={'neu-icon'} />}> */}
-                {/* <Spline className='neu-Spline-styling' scene="https://prod.spline.design/XCZyEcJz1nwmIi2L/scene.spline" /> */}
-                {/* </Suspense> */}
                 <p className='neu-Section-header-text neu-Font-Bold'>Contact</p>
               </div>
               <Card>

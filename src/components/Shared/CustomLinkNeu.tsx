@@ -15,7 +15,7 @@ const CustomLinkNeu: FC<ICustomLink> = (props) => {
   const router = useRouter();
   console.log(router.pathname === href);
   return (
-    <Link href={href}>
+    <Link href={href} legacyBehavior>
       <a title={title} style={{
         pointerEvents: router.pathname !== href ? 'inherit' : 'none',
         color: router.pathname !== href ? "" : "#f08080"
