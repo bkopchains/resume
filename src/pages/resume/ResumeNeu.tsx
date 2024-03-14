@@ -17,7 +17,7 @@ const ResumeNeu: FC = () => {
           <p className='neu-App-header-text neu-Font-Bold'>Ben Kopchains</p>
           <div className='neu-App-header-menu'>
             {/* <CustomLink to='/'>About</CustomLink> */}
-            <CustomLink href='/resume'>Resume</CustomLink>
+            <CustomLink href='/'>Resume</CustomLink>
             <CustomLink href='/resumee'>Resume</CustomLink>
             <CustomLink style={{ pointerEvents: 'none' }} title="coming soon" href='/resumeee'>Resume</CustomLink>
           </div>
