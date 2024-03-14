@@ -8,43 +8,6 @@ $grey-text: #808080;
 
 $transition-time: 0.2s;
 
-
-// .neu-About-Man, .neu-About-Circle, .neu-AM-Head {
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   height: 100%;
-//   align-items: center;
-// }
-
-// .neu-About-Circle {
-//   width: 250px;
-//   height: 250px;
-//   border-radius: 250px;
-//   border: $green-text 10px solid;
-//   justify-content: center;
-//   box-shadow: #0000004d 0px 3px 3px 0px;
-// }
-
-// .neu-About-Man .neu-AM-Body, .neu-About-Man .neu-AM-Head {
-//   background-color: $green-text;
-//   box-shadow: #0000004d 0px 3px 3px 0px;
-// }
-
-// .neu-About-Man .neu-AM-Body {
-//   width: 120px;
-//   height: 75px;
-//   border-radius: 25px 25px 50px 50px;
-//   margin-top: 10px;
-// }
-
-// .neu-About-Man .neu-AM-Head {
-//   justify-content: center;
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 100px;
-// }
-
 .neu-App-link {
   color: $green-text;
   cursor: pointer;
@@ -328,19 +291,20 @@ $transition-time: 0.2s;
     margin: 0px;
     position: relative;
     display: flex;
-    justify-content: space-between;
-    top: 3rem;
+    flex-direction: column;
+    top: 2rem;
     padding: 0rem 2rem;
     width: calc(100% - 4rem);
     align-items: initial;
   }
 
   .neu-App-header-menu .neu-App-link {
-    margin-top: -10px;
+    margin: -10px 5px 0 0;
   }
 
   .neu-App-header-text {
-    font-size: 10rem;
+    margin: 0;
+    font-size: 2rem;
     top: 4rem;
     left: 4rem;
   }
@@ -359,7 +323,7 @@ $transition-time: 0.2s;
   }
 
   .neu-Body-spacer {
-    height: 7rem;
+    height: 6rem;
   }
 
   .neu-Flex-row {
