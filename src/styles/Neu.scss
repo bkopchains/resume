@@ -1,10 +1,28 @@
-$light-bkg: #e0e0e0;
-$light-box: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-$light-box-mobile: 5px 2px 20px #bebebe, -20px -20px 60px #ffffff;
+/* Dark theme — neumorphic surfaces */
+$page-bg: #12141a;
+$surface-card: #1c2028;
+$shadow-dark: #0a0b0e;
+$shadow-light: #2c333d;
+
+$neu-shadow-size-light: -4px;
+$neu-shadow-size-dark: 4px;
+$neu-shadow-size: 8px;
+
+$neu-shadow-size-mobile-light: -6px;
+$neu-shadow-size-mobile-dark: 6px;
+$neu-shadow-size-mobile: 14px;
+
+$neu-shadow: $neu-shadow-size-dark $neu-shadow-size-dark $neu-shadow-size $shadow-dark, $neu-shadow-size-light $neu-shadow-size-light $neu-shadow-size $shadow-light;
+$neu-shadow-mobile: $neu-shadow-size-mobile-dark $neu-shadow-size-mobile-dark $neu-shadow-size-mobile $shadow-dark, $neu-shadow-size-mobile-light $neu-shadow-size-mobile-light $neu-shadow-size-mobile $shadow-light;
 
 $pink-text: #f08080;
-$green-text: #106060;
-$grey-text: #808080;
+$green-text: #6ecbb8;
+$grey-text: #8b95a5;
+
+/* Legacy aliases used below */
+$light-bkg: $page-bg;
+$light-box: $neu-shadow;
+$light-box-mobile: $neu-shadow-mobile;
 
 $transition-time: 0.2s;
 
@@ -16,12 +34,13 @@ $transition-time: 0.2s;
 }
 
 .neu-App-link:hover {
-  color: $pink-text
+  color: $pink-text;
 }
 
 .neu-App {
   height: 100% !important;
-  background: $light-bkg;
+  background: $page-bg;
+  color: #e4e6eb;
 }
 
 .neu-Font-Bold {
@@ -35,7 +54,7 @@ $transition-time: 0.2s;
 }
 
 .neu-App-header {
-  background-color: #1f2229;
+  background-color: $surface-card;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -47,9 +66,9 @@ $transition-time: 0.2s;
 }
 
 .neu-Gradient-bkg {
-  color: $light-bkg;
-  background: $light-bkg;
-  box-shadow: $light-box;
+  color: #e4e6eb;
+  background: $surface-card;
+  box-shadow: $neu-shadow;
   // background: linear-gradient(
   //   112deg,
   //   #0d0d2a 0%,
@@ -91,8 +110,6 @@ $transition-time: 0.2s;
 .neu-App-header-text {
   margin: 2rem 0 0 0;
   font-size: 5rem;
-  mix-blend-mode: difference;
-  opacity: 90%;
   color: $pink-text;
   transition: 0.5s;
 }
@@ -123,7 +140,7 @@ $transition-time: 0.2s;
   top: 7rem;
   right: 3rem;
   text-align: right;
-  color: black;
+  color: #e4e6eb;
   font-size: xx-large;
   font-weight: 400;
 }
@@ -143,10 +160,28 @@ $transition-time: 0.2s;
   height: calc(100vh - 75px);
   overflow-y: scroll;
   padding: 0 3rem;
+  scrollbar-color: #3a404c $page-bg;
+  scrollbar-width: thin;
+}
+
+.neu-App-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.neu-App-body::-webkit-scrollbar-track {
+  background: $page-bg;
+}
+
+.neu-App-body::-webkit-scrollbar-thumb {
+  background: #3a404c;
+  border-radius: 6px;
+}
+
+.neu-App-body::-webkit-scrollbar-thumb:hover {
+  background: #4a5260;
 }
 .neu-App-body-scrollable {
-  background: $light-bkg;
-  // height: 100vh;
+  background: $page-bg;
 }
 
 
@@ -164,6 +199,19 @@ $transition-time: 0.2s;
   font-size: smaller;
 }
 
+/* Resume: denser copy, faster to scan */
+.neu-Resume-compact .neu-Custom-list li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.neu-Resume-tight-lead {
+  margin: 0 0 0.35rem 0;
+  font-size: smaller;
+  font-weight: 600;
+  color: $green-text;
+}
+
 .neu-Spline-styling canvas {
   width: 50px !important;
   height: 50px !important;
@@ -172,17 +220,15 @@ $transition-time: 0.2s;
 .neu-Info-card {
   font-size: large;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   padding: 1rem;
   margin: 0rem 1rem 2rem 1rem;
-  color: black;
-  //background: rgba(255, 255, 255, 0.192);
+  color: #e4e6eb;
   border-radius: 1rem;
   min-height: 1rem;
-  //border: .neu-25rem solid rgba(255, 255, 255, 0.698);
-  //box-shadow: inset 00px 00px 1rem white;
-  background: $light-bkg;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: $surface-card;
+  box-shadow: $neu-shadow;
+  
 }
 
 .neu-Info-card-header {
@@ -235,7 +281,7 @@ $transition-time: 0.2s;
 }
 
 .neu-Info-border {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .neu-Info-card-header-title {
