@@ -207,11 +207,18 @@ const ResumeNeu: FC = () => {
                 />
                 <CardBody>
                   <p>
-                    Game developed using the Godot engine about rigging the outcome of chicken races. Built in one week for the 2026 Brackeys Game Jam on Itch.io.
+                    Game developed using the Godot engine about rigging the outcome of chicken races. Built in one week for the{" "}
+                    <a className="neu-App-link" href="https://itch.io/jam/brackeys-15" target="_blank" rel="noreferrer">
+                      2026 Brackeys Game Jam
+                    </a>{" "}
+                    on Itch.io.
+                  </p>
+                  <p>
+                    Finished in 374th overall out of 1429 submissions, and notably 108th in the "Innovation" category.
                   </p>
                   <p>
                     <a className="neu-App-link" href="https://itch.io/jam/brackeys-15/rate/4313103" target="_blank" rel="noreferrer">
-                      Game and Results
+                      Game and Full Results
                     </a>
                   </p>
                 </CardBody>
@@ -226,7 +233,10 @@ const ResumeNeu: FC = () => {
                 <CardBody>
                   <p>
                     Web app built for my own wedding. Used to handle RSVP submissions, save the date info, and
-                    conditionally display event information based on the guest’s invitation. Displays clear instructions
+                    conditionally display event information based on the guest's invitation. 
+                  </p>
+                  <p>
+                    Displays clear instructions
                     and directions for multiple days of wedding-related events, and successfully managed responses of
                     over 150 guests.
                   </p>
@@ -242,8 +252,10 @@ const ResumeNeu: FC = () => {
                 <CardBody>
                   <p>
                     Web app for tracking Balatro scores with daily seeded challenges, group and global leaderboards, user
-                    authentication, and real-time score submissions with 250+ users. Designed to aggregate all daily
-                    score submissions into readable leaderboards, tracking high scores by various metrics.
+                    authentication, and real-time score submissions with 250+ users. 
+                  </p>
+                  <p>
+                    Designed to aggregate all daily score submissions into readable leaderboards, tracking high scores by various metrics.
                   </p>
                   <p>
                     <a className="neu-App-link" href="https://balatracker.com" target="_blank" rel="noreferrer">
