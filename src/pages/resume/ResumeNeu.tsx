@@ -32,7 +32,7 @@ const ResumeNeu: FC = () => {
                 <FontAwesomeIcon icon={faBriefcase} className={"neu-icon"} />
                 <p className="neu-Section-header-text neu-Font-Bold">Employment</p>
               </div>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader
                   titleText="Software Engineer III"
                   rightDetailText="Jan 2025 - Present"
@@ -168,7 +168,7 @@ const ResumeNeu: FC = () => {
                 <FontAwesomeIcon icon={faScrewdriverWrench} className={"neu-icon"} />
                 <p className="neu-Section-header-text neu-Font-Bold">Technical proficiencies</p>
               </div>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader
                   titleText="Programming Languages & Frameworks"
                   rightDetailText=""
@@ -180,13 +180,13 @@ const ResumeNeu: FC = () => {
                   <p>React, Jest, Cypress, .NET, Spring</p>
                 </CardBody>
               </Card>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader titleText="Cloud Services" rightDetailText="" subTitleText="Platforms & delivery" accordion />
                 <CardBody>
                   <p>Microsoft Azure Cloud, Azure DevOps, AWS</p>
                 </CardBody>
               </Card>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader titleText="Software & Tools" rightDetailText="" subTitleText="Day-to-day tooling" accordion />
                 <CardBody>
                   <p>Visual Studio, VS Code, IntelliJ IDEA, Git, Adobe Suite, Blender, Godot, Microsoft Office</p>
@@ -198,7 +198,7 @@ const ResumeNeu: FC = () => {
                 <FontAwesomeIcon icon={faCode} className={"neu-icon"} />
                 <p className="neu-Section-header-text neu-Font-Bold">Independent projects</p>
               </div>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader
                   titleText="Chicken Superfecta"
                   rightDetailText="2026"
@@ -223,7 +223,7 @@ const ResumeNeu: FC = () => {
                   </p>
                 </CardBody>
               </Card>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader
                   titleText="Wedding Website"
                   rightDetailText="2025"
@@ -242,7 +242,7 @@ const ResumeNeu: FC = () => {
                   </p>
                 </CardBody>
               </Card>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader
                   titleText="Balatracker"
                   rightDetailText="2024"
@@ -268,7 +268,7 @@ const ResumeNeu: FC = () => {
                 <FontAwesomeIcon icon={faBookOpen} className={"neu-icon"} />
                 <p className="neu-Section-header-text neu-Font-Bold">Continuous learning</p>
               </div>
-              <Card defaultClosed>
+              <Card>
                 <CardHeader
                   titleText="Exploration & Practice"
                   rightDetailText=""
